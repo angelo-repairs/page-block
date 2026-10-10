@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angelo Repairs — Fermé</title>
+  <meta name="robots" content="noindex">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e8e8;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Grille de fond subtile */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,102,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,102,0,0.03) 1px, transparent 1px);
+      background-size: 64px 64px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Halo orange en bas à droite */
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255,102,0,0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 540px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Logo */
+    .logo {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 3.5rem;
+    }
+    .logo span { color: #ff6600; }
+
+    /* Ligne de séparation fine */
+    .divider {
+      width: 36px;
+      height: 2px;
+      background: #ff6600;
+      margin: 0 auto 2.5rem;
+      border-radius: 2px;
+    }
+
+    /* Titre principal */
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.75rem;
+    }
+
+    h1 em {
+      font-style: normal;
+      color: #ff6600;
+    }
+
+    /* Message principal */
+    .message {
+      font-size: 0.97rem;
+      color: #888;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .message strong {
+      color: #e8e8e8;
+      font-weight: 500;
+    }
+
+    /* Citation / message perso */
+    .personal {
+      background: rgba(255,102,0,0.06);
+      border: 1px solid rgba(255,102,0,0.15);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      font-size: 0.92rem;
+      color: #aaa;
+      line-height: 1.75;
+      font-style: italic;
+    }
+
+    /* Signature */
+    .signature {
+      margin-top: 2.5rem;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #444;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* Liens discrets */
+    .contact-line {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+    .contact-line a {
+      color: #ff6600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .contact-line a:hover { opacity: 0.75; }
+
+    @media (max-width: 480px) {
+      .personal { padding: 1rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <div class="logo">Angelo<span>.</span>Repairs</div>
+
+  <div class="divider"></div>
+
+  <h1>Le service est <em>fermé.</em></h1>
+
+  <p class="message">
+    Après plusieurs mois d'activité, <strong>Angelo Repairs ferme définitivement ses portes.</strong><br>
+    Le site n'est plus actif et aucune nouvelle intervention ne sera prise en charge.
+  </p>
+
+  <div class="personal">
+    "Je n'ai plus le temps de m'en occuper et les interventions se faisaient de plus en plus rares.
+    Je reste disponible pour mes amis et mes proches, mais c'est une page qui se tourne.
+    Merci à tous ceux qui m'ont fait confiance."
+  </div>
+
+  <p class="message">
+    Ce fut une belle aventure. Merci pour votre confiance et votre soutien tout au long de ce projet.
+  </p>
+
+  <div class="signature">— Angelo</div>
+
+  <p class="contact-line">
+    Pour toute question urgente&nbsp;:
+    <a href="mailto:angelo.nino225@gmail.com">angelo.nino225@gmail.com</a>
+  </p>
+
+</div>
+
+</body>
+</html>
